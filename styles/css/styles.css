@@ -275,6 +275,33 @@ body {
   color: #66778e;
 }
 
+/*---------END OFFER STYLES---------- */
+/*---------MAIN-OFFER STYLES--------- */
+.main-offer {
+  padding: 100px 0;
+}
+.main-offer .container-fluid {
+  padding-right: 0;
+}
+.main-offer .container-fluid img {
+  padding-right: 0;
+}
+.main-offer .container-fluid .try {
+  padding: 100px 20px 0 90px;
+}
+.main-offer .container-fluid .try h3 {
+  margin-bottom: 50px;
+  font: 400 36px " Montserrat", sans-serif;
+  color: #fff;
+}
+.main-offer .container-fluid .try p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #66778e;
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
@@ -319,6 +346,23 @@ body {
   .list-off {
     padding-left: 40px;
   }
+
+  /*---------END OFFER STYLES---------- */
+  /*---------MAIN-OFFER STYLES--------- */
+  .main-offer {
+    padding: 100px 0;
+  }
+  .main-offer .container-fluid .try {
+    padding: 50px 20px 0;
+  }
+  .main-offer .container-fluid .try h3 {
+    margin-bottom: 35px;
+    font-size: 30px;
+  }
+  .main-offer .container-fluid .try p {
+    font-size: 13px;
+    line-height: 28px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
@@ -356,6 +400,9 @@ body {
     display: none;
   }
 
+  .offer-list {
+    overflow: hidden;
+  }
   .offer-list li {
     text-align: center;
   }
@@ -366,52 +413,31 @@ body {
     left: 50%;
     margin-left: -27px;
   }
-  .offer-list li .graph {
-    position: relative;
-  }
   .offer-list li .graph::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 55px;
-    height: 40px;
-    background: url("../../images/graph-icon.png") no-repeat;
-  }
-  .offer-list li .headphone {
-    position: relative;
+    left: 50%;
+    margin-left: -27px;
   }
   .offer-list li .headphone::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 55px;
-    height: 52px;
-    background: url("../../images/headphones-icon.png") no-repeat;
-  }
-  .offer-list li .circle {
-    position: relative;
+    left: 50%;
+    margin-left: -27px;
   }
   .offer-list li .circle::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 47px;
-    height: 47px;
-    background: url("../../images/cd-icon.png") no-repeat;
+    left: 50%;
+    margin-left: -24px;
   }
-  .offer-list p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 32px;
-    color: #66778e;
+  .offer-list li p {
+    font-size: 13px;
   }
 
-  .list-off {
-    padding-left: 40px;
+  /*---------END OFFER STYLES---------- */
+  /*---------MAIN-OFFER STYLES--------- */
+  .main-offer {
+    padding: 50px 0;
+  }
+  .main-offer .container-fluid .try {
+    margin-bottom: 15px;
+    padding: 0;
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
@@ -470,4 +496,68 @@ body {
   }
 
   /*---------END FUTURE STYLES--------- */
+  /*------------OFFER STYLES----------- */
+  .offer {
+    padding-bottom: 50px;
+  }
+  .offer .page-header {
+    padding-bottom: 0;
+  }
+  .offer .page-header h2 {
+    font-size: 43px;
+  }
+  .offer .img-wrap::before {
+    display: none;
+  }
+  .offer .img-wrap img {
+    width: 275px;
+  }
+
+  .offer-list {
+    overflow: hidden;
+  }
+  .offer-list li {
+    text-align: center;
+  }
+  .offer-list li h3 {
+    font-size: 20px;
+  }
+  .offer-list li .volume::before {
+    left: 50%;
+    margin-left: -27px;
+  }
+  .offer-list li .graph::before {
+    left: 50%;
+    margin-left: -27px;
+  }
+  .offer-list li .headphone::before {
+    left: 50%;
+    margin-left: -27px;
+  }
+  .offer-list li .circle::before {
+    left: 50%;
+    margin-left: -24px;
+  }
+  .offer-list li p {
+    font-size: 13px;
+  }
+
+  /*---------END OFFER STYLES---------- */
+  /*---------MAIN-OFFER STYLES--------- */
+  .main-offer {
+    padding: 0;
+  }
+  .main-offer .container-fluid .try {
+    margin-bottom: 15px;
+    padding: 0 20px 0 0;
+    text-align: center;
+  }
+  .main-offer .container-fluid .try h3 {
+    margin-bottom: 35px;
+    font-size: 30px;
+  }
+  .main-offer .container-fluid .try p {
+    font-size: 12px;
+    line-height: 27px;
+  }
 }

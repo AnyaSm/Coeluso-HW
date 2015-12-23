@@ -32,6 +32,7 @@
         display: none
 
   .offer-list
+    overflow: hidden
     li
       text-align: center
       h3
@@ -41,40 +42,27 @@
           left: 50%
           margin-left: -27px
       .graph
-        position: relative
         &::before
-          content: ''
-          position: absolute
-          top: 0
-          left: 0
-          width: 55px
-          height: 40px
-          background: url("../../images/graph-icon.png") no-repeat
+          left: 50%
+          margin-left: -27px
       .headphone
-        position: relative
         &::before
-          content: ''
-          position: absolute
-          top: 0
-          left: 0
-          width: 55px
-          height: 52px
-          background: url("../../images/headphones-icon.png") no-repeat
+          left: 50%
+          margin-left: -27px
       .circle
-        position: relative
         &::before
-          content: ''
-          position: absolute
-          top: 0
-          left: 0
-          width: 47px
-          height: 47px
-          background: url("../../images/cd-icon.png") no-repeat
-    p
-      font-family: 'Montserrat', sans-serif
-      font-size: 14px
-      font-weight: 400
-      line-height: 32px
-      color: $future-p
-  .list-off
-    padding-left: 40px
+          left: 50%
+          margin-left: -24px
+      p
+        font-size: 13px
+  /*---------END OFFER STYLES----------*/
+
+  /*---------MAIN-OFFER STYLES---------*/
+  .main-offer
+    padding: 50px 0
+    .container-fluid
+      img
+      .try
+        margin-bottom: 15px
+        padding: 0
+        text-align: center
