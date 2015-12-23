@@ -302,6 +302,58 @@ body {
   color: #66778e;
 }
 
+/*------END MAIN-OFFER STYLES-------- */
+/*----------SLIDER STYLES------------ */
+.slider {
+  position: relative;
+  padding-bottom: 120px;
+  background: #0a2345 url("../../images/slider-bg.png") no-repeat;
+  background-size: cover;
+}
+.slider .carousel {
+  background: transparent;
+}
+
+.slide .item {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
+}
+.slide .item p {
+  color: #66778e;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 48px;
+}
+.slide .item .carousel-caption {
+  padding-bottom: 5px;
+}
+.slide .item .carousel-caption p {
+  display: inline-block;
+  position: relative;
+  padding-left: 50px;
+  font: 400 14px " Montserrat", sans-serif;
+  color: #66778e;
+}
+.slide .item .carousel-caption p span {
+  color: #213a61;
+}
+.slide .item .carousel-caption p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 38px;
+  height: 38px;
+  background: url("../../images/user-photo.png") no-repeat;
+}
+
+.carousel-indicators {
+  bottom: -40px;
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
@@ -363,6 +415,8 @@ body {
     font-size: 13px;
     line-height: 28px;
   }
+
+  /*------END MAIN-OFFER STYLES-------- */
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
@@ -438,6 +492,19 @@ body {
     margin-bottom: 15px;
     padding: 0;
     text-align: center;
+  }
+
+  /*------END MAIN-OFFER STYLES-------- */
+  /*----------SLIDER STYLES------------ */
+  .slider {
+    padding-bottom: 100px;
+  }
+
+  .slide .item {
+    padding: 80px 0;
+  }
+  .slide .item p {
+    font-size: 19px;
   }
 }
 @media (max-width: 767px) {
@@ -559,5 +626,22 @@ body {
   .main-offer .container-fluid .try p {
     font-size: 12px;
     line-height: 27px;
+  }
+
+  /*------END MAIN-OFFER STYLES-------- */
+  /*----------SLIDER STYLES------------ */
+  .slider {
+    padding-bottom: 80px;
+  }
+
+  .slide .item {
+    padding: 80px 0;
+  }
+  .slide .item p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .slide .item .carousel-caption p {
+    font-size: 10px;
   }
 }
