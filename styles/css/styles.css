@@ -106,10 +106,7 @@ body {
   border-radius: 50px;
 }
 .jumbotron .button .btn-primary:hover {
-  border: none;
-}
-.jumbotron .button:hover {
-  border: none;
+  border: 1px solid transparent;
 }
 .jumbotron .hvr-float-shadow:before {
   background: radial-gradient(ellipse at center, #2e66b2 0%, rgba(0, 0, 0, 0) 80%);
@@ -307,7 +304,7 @@ body {
 .slider {
   position: relative;
   padding-bottom: 120px;
-  background: #0a2345 url("../../images/slider-bg.png") no-repeat;
+  background: rgba(10, 35, 69, 0.2) url("../../images/slider-bg.png") no-repeat;
   background-size: cover;
 }
 .slider .carousel {
@@ -354,6 +351,97 @@ body {
   bottom: -40px;
 }
 
+/*-------END SLIDER STYLES---------- */
+/*---------DISCOVER STYLES---------- */
+.discover {
+  text-align: center;
+  background: #02050a;
+}
+.discover .container {
+  padding: 100px 0;
+  border-bottom: 1px solid #66778e;
+}
+.discover .page-header {
+  padding-bottom: 100px;
+}
+.discover .page-header h3 {
+  margin-bottom: 50px;
+  font: 400 36px " Montserrat", sans-serif;
+  color: #fff;
+}
+.discover .page-header p {
+  margin: 0 auto;
+  max-width: 630px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #66778e;
+}
+.discover .img-wrap {
+  position: relative;
+  margin-bottom: 90px;
+}
+.discover .img-wrap::before {
+  content: "";
+  position: absolute;
+  left: 89px;
+  top: -35px;
+  width: 450px;
+  height: 684px;
+  background: url("../../images/form-bg.png") no-repeat;
+}
+.discover .img-wrap::after {
+  content: "";
+  position: absolute;
+  width: 430px;
+  height: 684px;
+  top: -35px;
+  right: 111px;
+  background: url("../../images/media-bg.png") no-repeat;
+}
+.discover a {
+  padding: 13px 30px;
+  font: 700 14px " Montserrat", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #2e66b2;
+  border-radius: 50px;
+}
+.discover a:hover {
+  border: 1px solid transparent;
+}
+.discover .hvr-float-shadow:before {
+  background: radial-gradient(ellipse at center, #2e66b2 0%, rgba(0, 0, 0, 0) 80%);
+}
+
+/*------END DISCOVER STYLES---------- */
+/*----------FOOTER STYLES------------ */
+.footer {
+  padding: 50px 0 75px 0;
+  background: #02050a;
+}
+.footer .footer-list li {
+  padding-right: 20px;
+}
+.footer .footer-list li a {
+  font: 700 14px " Montserrat", sans-serif;
+  text-decoration: none;
+  color: #14396a;
+}
+.footer .footer-list li a:hover {
+  color: #66778e;
+}
+.footer .footer-list li .hvr-underline-from-center::before {
+  height: 1px;
+  background: #66778e;
+}
+.footer p {
+  font: 400 14px " Montserrat", sans-serif;
+  color: #14396a;
+}
+
+/*-------END FOOTER STYLES----------- */
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
@@ -417,6 +505,15 @@ body {
   }
 
   /*------END MAIN-OFFER STYLES-------- */
+  /*---------DISCOVER STYLES---------- */
+  .discover .img-wrap::before {
+    left: -12px;
+  }
+  .discover .img-wrap::after {
+    right: 10px;
+  }
+
+  /*------END DISCOVER STYLES---------- */
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
@@ -506,6 +603,20 @@ body {
   .slide .item p {
     font-size: 19px;
   }
+
+  /*-------END SLIDER STYLES---------- */
+  /*---------DISCOVER STYLES---------- */
+  .discover .container {
+    padding: 50px 0;
+  }
+  .discover .img-wrap::before {
+    display: none;
+  }
+  .discover .img-wrap::after {
+    display: none;
+  }
+
+  /*------END DISCOVER STYLES---------- */
 }
 @media (max-width: 767px) {
   /*------------WELCOME STYLES---------- */
@@ -644,4 +755,53 @@ body {
   .slide .item .carousel-caption p {
     font-size: 10px;
   }
+
+  /*-------END SLIDER STYLES----------- */
+  /*---------DISCOVER STYLES----------- */
+  .discover .container {
+    padding: 50px 0;
+  }
+  .discover .container .page-header {
+    padding-bottom: 50px;
+  }
+  .discover .container .page-header h3 {
+    margin-bottom: 35px;
+    font-size: 30px;
+  }
+  .discover .container .page-header p {
+    font-size: 13px;
+    line-height: 30px;
+  }
+  .discover .container .img-wrap {
+    display: none;
+  }
+  .discover .container .img-wrap::before {
+    display: none;
+  }
+  .discover .container .img-wrap::after {
+    display: none;
+  }
+
+  /*------END DISCOVER STYLES---------- */
+  /*----------FOOTER STYLES------------ */
+  .footer {
+    padding: 50px 0 50px 0;
+  }
+  .footer .footer-list {
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  .footer .footer-list li {
+    padding-right: 10px;
+  }
+  .footer .footer-list li a {
+    font-size: 13px;
+  }
+  .footer p {
+    padding: 0 15px 0 0;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  /*-------END FOOTER STYLES----------- */
 }
